@@ -9,5 +9,4 @@ int numSender = 0;
 
 void *handle_data_receiver(void *);
 
-#error
-#endif
+#endif 
