@@ -1,0 +1,17 @@
+File input: In.txt
+File output:
+	Receiver 1:
+
+Running Application:
+1.	Run Proxy
+		gcc proxy.c proxy.h -o proxy -lpthread
+		./proxy
+2.	After run Proxy, run Receiver ( Remember connect all Receiver to Proxy, run 1 and 2)
+		gcc receiver.c receiver.h -o receiver
+		./receiver <argument 1 or 2>	(example: ./receiver 1)
+3.	Then run Sender, sender <argument> will read data in In.txt
+		gcc sender.c sender.h -o sender
+		./sender <number>    (example: ./sender 1)
+
+Sender send all data from file, send EOT packet and terminated to Proxy.
+When Proxy is terminated (Ctrl C) , Receiver will terminates.
