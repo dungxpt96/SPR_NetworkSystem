@@ -57,6 +57,8 @@ void print_data(unsigned char *data) {
 	}
 }
 
+/* Hello  */
+
 void print_packet(packet_t *packet) {
 	printf(" ----- PACKET ----- \n");
 	printf("Header: %d\n", packet->header);
